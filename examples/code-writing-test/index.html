@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Code writing test</title>
+  <style>
+    p {
+      color: #9790CE;
+      margin: 0;
+      display: inline;
+      font-family: 'Roboto-Mono', Ubuntu;
+    }
+    .yellow {
+      color: #FFAD01;
+    }
+
+  </style>
 </head>
 <body>
 
@@ -17,25 +29,25 @@
       delay: 50
     });
 
-    typewriter.typeString('<strong>$ Alpaca:~</strong>')
+    typewriter.typeString('<p class="yellow">$ Alpaca:~</p>')
       .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>curl </strong>')
-      .typeString('-s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash')
+      .typeString('<p class="yellow">curl </p>')
+      .typeString('<p>-s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash</p>')
       .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>apt install </strong>')
-      .typeString('crowdsec')
+      .typeString('<p class="yellow">apt install </p>')
+      .typeString('<p>crowdsec</p>')
       .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>apt install </strong>')
-      .typeString('crowdsec-firewall-bouncer-iptables')
+      .typeString('<p class="yellow">apt install </p>')
+      .typeString('<p>crowdsec-firewall-bouncer-iptables</p>')
       .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>cscli collections list</strong>')
+      .typeString('<p class="yellow">cscli collections list</p>')
       .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>cscli metrics</strong>')
+      .typeString('<p class="yellow">cscli metrics</p>')
       .pauseFor(1500)
       .start();
   </script>
