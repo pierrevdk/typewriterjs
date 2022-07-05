@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Example - Chat bot</title>
+  <title>Code writing test</title>
 </head>
 <body>
 
@@ -13,20 +13,30 @@
   <script src='../../dist/core.js'></script>
   <script type='text/javascript'>
     const typewriter = new Typewriter('#typewriter', {
-      loop: true
+      loop: false,
+      delay: 50
     });
 
-    typewriter.typeString('<strong>Human: </strong>')
-      .typeString('Hello how are you?')
-      .pauseFor(2500)
+    typewriter.typeString('<strong>$ Alpaca:~</strong>')
+      .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>Bot: </strong>')
-      .typeString('I am fine thanks, how are you?')
-      .pauseFor(2500)
+      .typeString('<strong>curl </strong>')
+      .typeString('-s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.deb.sh | sudo bash')
+      .pauseFor(1500)
       .typeString('<br/>')
-      .typeString('<strong>Human: </strong> ')
-      .typeString('I am great!')
-      .pauseFor(2500)
+      .typeString('<strong>apt install </strong>')
+      .typeString('crowdsec')
+      .pauseFor(1500)
+      .typeString('<br/>')
+      .typeString('<strong>apt install </strong>')
+      .typeString('crowdsec-firewall-bouncer-iptables')
+      .pauseFor(1500)
+      .typeString('<br/>')
+      .typeString('<strong>cscli collections list</strong>')
+      .pauseFor(1500)
+      .typeString('<br/>')
+      .typeString('<strong>cscli metrics</strong>')
+      .pauseFor(1500)
       .start();
   </script>
   
